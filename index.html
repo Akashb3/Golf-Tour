@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Hazards Vaal Tour Invite</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2d5016, #4a7c3a, #6ba047);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .poster {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 30px;
+            border: 3px solid #d4af37;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .poster::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #2d5016, #4a7c3a);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffd700;
+        }
+        
+        .content {
+            display: grid;
+            gap: 20px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .section {
+            background: #f8f9fa;
+            padding: 18px;
+            border-radius: 12px;
+            border-left: 5px solid #4a7c3a;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2d5016;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .divider {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            margin: 15px 0;
+        }
+        
+        .highlight {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 2px solid #d4af37;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: #2d5016;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .emoji {
+            font-size: 18px;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        li::before {
+            content: '🏌️';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        .strong {
+            font-weight: bold;
+            color: #2d5016;
+        }
+        
+        .footer {
+            background: linear-gradient(135deg, #d4af37, #ffd700);
+            color: #2d5016;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .poster {
+                padding: 20px;
+                margin: 5px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .content {
+                font-size: 13px;
+            }
+            
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="header">
+            <div class="title">⛳ Natural Hazards Vaal Tour Invite</div>
+            <div class="subtitle">🎉 Get ready, ladies and gents -- it's game time at the Vaal Golf Tour!</div>
+            <div style="margin-top: 10px; font-size: 14px;">We'll be rolling with 6 teams of 4 players plus 2 Wildcard players to keep things spicy.</div>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <div class="section-title">📌 How it's going down:</div>
+                <ul>
+                    <li><span class="strong">Captains Draw 🎩</span> 📅 03/09/2025 @ 7pm (via randomizer -- results posted in the group).</li>
+                    <li><span class="strong">Team Selection Night 🏌️‍♂️</span> 📅 Friday night before Round 1 🎩 Captains will pick players from hats to build their squads. (If a captain can't make it, we'll nominate someone to pick on their behalf).</li>
+                </ul>
+            </div>
+            
+            <hr class="divider">
+            
+            <div class="section">
+                <div class="section-title">🏆 Tournament Format Scoring System:</div>
+                <ul>
+                    <li><span class="strong">Individual Format:</span> Stableford over the weekend.</li>
+                    <li><span class="strong">Team Format:</span> Top 3 scores from each team count towards the team total over 2 days.</li>
+                    <li><span class="strong">Wildcard Twist:</span> The Wildcard players will draw 3 teams from a hat. A captain from one of those teams will then select 4 holes. The Wildcard players' scores on those 4 holes will be added to that team's total score. Keeps things spicy and unpredictable</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">🔥 Ryder Cup Style Matchups:</div>
+                <ul>
+                    <li>Captains will decide which of their team members play together in each fourball.</li>
+                    <li>This also decides who goes head-to-head against the other teams.</li>
+                    <li><span class="strong">Individual Leaderboard:</span> Cumulative Stableford points across the weekend decide the Individual Champs -- 1st, 2nd, 3rd (maybe 4th).</li>
+                    <li><span class="strong">Daily Challenges:</span> Nearest to the Pin (NTP), Nearest to the Pin in Two (NTTP)</li>
+                </ul>
+            </div>
+            
+            <hr class="divider">
+            
+            <div class="two-column">
+                <div class="section">
+                    <div class="section-title">📏 Rules</div>
+                    <ul>
+                        <li><span class="strong">Gimmes:</span> One whiskey bottle length at the most. (No gimmes for Birdie and Par putts. No Mulligans allowed!)</li>
+                        <li><span class="strong">Scorecards:</span> One physical scorecard must be submitted.</li>
+                        <li><span class="strong">Scorecapture:</span> Used as the second official scorecard. (Rounds will be set up beforehand -- PLEASE DO NOT open your own round).</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <div class="section-title">🏆 Prizes</div>
+                    <ul>
+                        <li><span class="strong">Team Competition:</span> 1st to 3rd place</li>
+                        <li><span class="strong">Individual Winners (Weekend Total):</span> 1st to 4th place</li>
+                        <li>Great Cash Prizes up for grabs 💸</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight">
+                💰 Buy-In R100 per player (covers both days -- goes towards prizes 🏅)
+            </div>
+        </div>
+        
+        <div class="footer">
+            📣 Bring your A-game, your banter, and get ready for an unforgettable weekend of golf at the Vaal!
+        </div>
+    </div>
+</body>
+</html>
